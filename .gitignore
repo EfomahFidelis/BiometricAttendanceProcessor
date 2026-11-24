@@ -1,0 +1,22 @@
+# Build output — regenerated on every build, never commit these
+**/bin/
+**/obj/
+
+# Visual Studio / VS Code per-user state
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider (if you ever use it)
+.idea/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Generated output folders — the program writes these at runtime
+# (timestamped folders created by FileSystemService)
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-[0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+AttendanceReport.xlsx

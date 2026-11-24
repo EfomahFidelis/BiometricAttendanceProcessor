@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>BiometricAttendanceProcessor</RootNamespace>
+    <AssemblyName>BiometricAttendanceProcessor</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      ClosedXML reads/writes .xlsx files without needing Excel installed or COM
+      interop (which is Windows-only and requires Excel itself). This is the
+      library that plays the role Excel's own object model played in the VBA
+      versions - Worksheet, Cell, Range all have close equivalents here.
+
+      If this version is out of date by the time you build, you can simply run:
+          dotnet add package ClosedXML
+      which will fetch whatever the latest stable version is.
+    -->
+    <PackageReference Include="ClosedXML" Version="0.104.1" />
+  </ItemGroup>
+
+</Project>
